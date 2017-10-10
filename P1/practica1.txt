@@ -36,7 +36,7 @@ Saco el punto de la definición de letra
 
 Cuento punto como palabra
 
-Cuento como frase dos puntos
+Añado a palabra que sea un punto seguido de letras
 
 5- Contar frases
 

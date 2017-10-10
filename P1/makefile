@@ -1,5 +1,5 @@
 FUENTE = practica1
-PRUEBA = ejemplo1.txt
+PRUEBA = ejemplo2.txt
 
 all: compile
 

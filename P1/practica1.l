@@ -1,6 +1,6 @@
 %{
 	/* Ponerlo a 1 activa el modo debug */
-	#define info 0
+	#define info 1
 
 	// Contadores
 	int caracteres = 0;
@@ -10,8 +10,6 @@
 	int frase = 0;
 %}
 
-// Definicion de alias
-
 delim	 	[ \t]+
 letra	 	[^ \t\.]
 letras   	{letra}+
@@ -19,12 +17,12 @@ minuscula	[a-z]
 mayuscula	[A-Z]
 palabramin	{minuscula}+
 palabramay	{mayuscula}+
-palabra		{letras}
 frasemin	{palabramin}\.
 frasemay	{palabramay}\.
 frase		{palabra}\.
 punto		\.
 frasepuntos	{punto}\.
+palabra		{letras}|{punto}({letras}?)
 
 %%
 
@@ -52,17 +50,6 @@ frasepuntos	{punto}\.
 					frase++; palabras++; caracteres += yyleng;
 				}
 
-{frasepuntos}	{
-					// Obtiene una frase ..
-					if(info) printf("Frase de puntos\n");
-					frase++; palabras++; caracteres += yyleng;
-				}
-
-{punto}			{
-					// Cuenta un punto como palabra y carater
-					if(info) printf("Punto\n");
-					palabras++; caracteres += yyleng;
-				}
 
 {palabramin}	{
 					// Cuenta una palabra en minusculas
