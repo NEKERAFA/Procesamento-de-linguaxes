@@ -1,0 +1,43 @@
+# Rafael Alcalde Azpiazu
+
+# Desarrollo
+
+Aproximación incremental
+
+defino delimitador como espacio o tabulador
+
+defino caracter como lo contrario a un tabulador
+
+1- Contar caracteres
+
+defino palabra como secuecia de caracteres
+
+2- Contar palabras
+
+defino minuscula como el conjunto de a - z
+
+defino palabra en minusculas como una o más minusculas
+
+defino mayuscula como el conjunto de a - z
+
+defino palabra en mayusculas como una o más mayusculas
+
+3- Contar palabras en minusculas y en mayusculas
+
+defino palabra min terminada en punto como fin de frase
+
+defino palabra may terminada en punto como fin de frase
+
+defino palabra termina en punto como fin de frase
+
+4- Contar frases -> No funciona
+
+Saco el punto de la definición de letra
+
+Cuento punto como palabra
+
+Cuento como frase dos puntos
+
+5- Contar frases
+
+Peculiaridades -> Al contar frase ya es más rebuscado. Se podría pensar un punto fin de frase (No sigue definición)
